@@ -1,0 +1,495 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+nav{
+    height: 85px;
+    background: #00e6b8;
+    width:100%;
+}
+label.logo{
+    color:white;
+    font-size:40px;
+    padding: 0  0 0 100px;
+    line-height: 80px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+a.active,a:hover{
+    background: #00997a;
+    transition: .5s;
+}
+.checkbtn{
+    color: white;
+    font-size: 45px;
+    float: right;
+    line-height: 80px;
+    padding-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+div.second{
+    width: 100%;
+    margin-top: 40px;
+    
+}
+div.first{
+    width: 100%;
+    margin-top: 40px;
+    
+}
+div.first{
+    background: rgb(216, 216, 216);
+}
+.poze{
+    
+    display: flex;
+    margin: auto;
+    max-width: max-content;
+}
+div.second{
+    background: #2c3e50;
+    margin-bottom: 30px;
+}
+.poza13{
+    width: 300px;
+    margin: 15px 20px 15px 0;
+}
+.poza15{
+    width: 300px;
+    margin: 15px 20px 15px 0;
+}
+.poza17{
+    width: 300px;
+    margin: 15px 20px 15px 0;
+}
+.facebook{
+    
+    width: 200px;
+    
+}
+.insta{
+    width: 100px;
+}
+.whatsapp{
+    width: 180px;
+    margin-bottom: 2px;
+}
+.insta2{
+    visibility: none;
+    opacity: 0;
+    width: 5%;
+}
+.whatsapp2{
+    visibility: none;
+    opacity: 0;
+    width: 9%;
+    margin-bottom: 2px;
+}
+div.second a:hover{
+    background: none;
+}
+.contactfaaaa{
+    margin: auto;
+    max-width: max-content;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: block;
+    width: 70%;
+    border-radius: 30px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 
+                0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+.telefon2{
+    display: flex;
+}
+.telefon1:hover{
+    background: #00e6b8;
+    color: white;
+    transition: 2s;
+    
+}
+.datefirma{
+    text-align: center;
+    font-size: 50px;
+    
+}
+.datefirma2{
+    width: 100%;
+    display: flex;
+    font-size: 50px;
+}
+.textdatefirma2{
+
+    width: 50%;
+}
+.textdatefirma{
+    width:100%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.icons{
+    width:50%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.nrtel{
+    width: 100%;
+    display: flex;
+    
+}
+.gmail{
+    width: 100%;
+    display: flex;
+    
+}
+.telef{
+    margin-left: 15px;
+    width:10%;
+}
+.mail{
+    width:15%;
+    margin-top: -15px;
+}
+.mailtext{
+    font-size: 2.6vw;
+    width: 100%;
+}
+.logo1{
+    height: 400px;
+}
+.telefon3{
+    width:50%;
+}
+.telefon1{
+    width:400px;
+    height: 100px;
+    margin-top: 200px;
+    background: none;
+    color: #00e6b8;
+    font-size: 50px;
+    border: 4px solid #00e6b8;
+    border-radius: 30px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+@media (max-width: 1260px){
+    .contactfaaaa{
+        width: 900px;
+    }
+    .mailtext{
+        font-size: 33px;
+    }
+}
+@media (max-width: 1100px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+    
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1025px){
+    .first{
+        width: 100%;
+    }
+    .poze{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .poza13{
+        padding-top: 30px;
+        max-width: 300px;
+        padding-bottom: 30px;
+        margin: auto;
+    }
+    .poza15{
+        max-width: 300px;
+        padding-bottom: 30px;
+        margin: auto;
+    }
+    .poza17{
+        max-width: 300px;
+        padding-bottom: 30px;
+        margin: auto;
+    }
+}
+@media (max-width: 916px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        color: white;
+        border-radius: 15px;
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+    #check:checked ~ nav ul{
+        left: 0%;
+    }
+    #check:checked ~ nav{
+        position: fixed;
+        margin-top: -40px;
+    }
+    #check:checked ~ .contactfaaaa .datefirma2 .icons, #check:checked ~ .second, #check:checked ~ .nrtel, #check:checked ~ .gmail{
+        display: none;
+    }
+    .contactfaaaa{
+        width: 700px;
+    }
+    .datefirma2{
+        display: block;
+    }
+    .textdatefirma2{
+        width: 100%;
+    }
+    .textdatefirma{
+        margin-left: 0;
+        text-align: center;
+    }
+    .icons{
+        position: relative;
+        left: 20%;
+        width: 50%;
+    }
+    .telef{
+        width:50px;
+    }
+    .mail{
+        width: 70px;
+    }
+    .logo1{
+        height: 300px;
+    }
+    .telefon1{
+        width: 340px;
+        margin-top: 100px;
+    }
+}
+@media (max-width: 725px){
+    .poza13{
+        display: none;
+    }
+    .poza15{
+        display: none;
+    }
+    .poza17{
+        margin-top: 30px;
+    }
+    .contactfaaaa{
+        width: 500px;
+    }
+    .icons{
+        left: 0;
+    }
+    .telefon1{
+        margin-top: 50px;
+        margin-left: -50px;
+        width: fit-content;
+    }
+    .logo1{
+        height: 200px;
+    }
+}
+@media (max-width: 520px){
+    .contactfaaaa{
+        width: 300px;
+    }
+    .telefon2{
+        width: fit-content;
+    }
+    .datefirma2{
+        font-size: 25px;
+    }
+    .logo1{
+        display: none;
+    }
+    .mailtext{
+        font-size: 75%;
+    }
+    .telefon1{
+        height: 75px;
+        width: 300px;
+        font-size: 35px;
+    }
+}
+@media (max-width: 400px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 30px;
+    }
+    ul{
+        
+        height: 100%;
+
+    }
+}
+@media (max-width: 300px){
+    .checkbtn{
+        padding-right: 10px;
+    }
+}
+@media (max-width: 630px){
+    .facebook{
+        position: relative;
+        left: 15%;
+        width: 150px;
+        
+    }
+    .insta{
+        position: relative;
+        left: 15%;
+        width: 75px;
+    }
+    .whatsapp{
+        position: relative;
+        left: 15%;
+        width: 130px;
+        margin-bottom: 2px;
+    }
+    .insta2{
+        position: relative;
+        left: 15%;
+        visibility: none;
+        opacity: 0;
+        width: 2%;
+    }
+    .whatsapp2{
+        position: relative;
+        left: 15%;
+        visibility: none;
+        opacity: 0;
+        width: 4%;
+        margin-bottom: 2px;
+    }
+}
+@media (max-width: 500px){
+    .facebook{
+        left: 10%;
+    }
+    .insta{
+        left: 10%;
+    }
+    .whatsapp{
+        left: 10%;
+    }
+    .insta2{
+        left: 10%;
+    }
+    .whatsapp2{
+        left: 10%;
+    }
+}
+@media (max-width: 460px){
+    .facebook{
+        left: 5%;
+    }
+    .insta{
+        left: 5%;
+    }
+    .whatsapp{
+        left: 5%;
+    }
+    .insta2{
+        left: 5%;
+    }
+    .whatsapp2{
+        left: 5%;
+    }
+}
+@media (max-width: 435px){
+    .facebook{
+        width: 100px;
+        margin: auto;
+    }
+    .insta{
+        width: 50px;
+        margin: auto;
+    }
+    .whatsapp{
+        width: 90px;
+        margin: auto;
+    }
+}
+@media (max-width: 350px){
+    .facebook{
+        left: 10%;
+    }
+    .insta{
+        left: 10%;
+    }
+    .whatsapp{
+        left: 10%;
+    }
+    .insta2{
+        left: 10%;
+    }
+    .whatsapp2{
+        left: 10%;
+    }
+    .poza17{
+        width: 200px;
+    }
+}
+@media (max-width: 321px){
+    .facebook{
+        left: 0;
+    }
+    .insta{
+        left: 0;
+    }
+    .whatsapp{
+        left: 0;
+    }
+    .whatsapp2{
+        left: 0;
+    }
+    .insta2{
+        left: 0;
+    }
+}

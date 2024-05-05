@@ -1,0 +1,1101 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+nav{
+    height: 85px;
+    background: #00e6b8;
+    width:100%;
+}
+label.logo{
+    color:white;
+    font-size:40px;
+    padding: 0  0 0 100px;
+    line-height: 80px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+a.active,a:hover{
+    background: #00997a;
+    transition: .5s;
+}
+.checkbtn{
+    color: white;
+    font-size: 45px;
+    float: right;
+    line-height: 80px;
+    padding-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+div.second{
+    width: 100%;
+    margin-top: 40px;
+    
+    
+}
+div.second{
+    background: #2c3e50;
+    margin-bottom: 30px;
+}
+.facebook{
+    
+    width: 200px;
+    
+}
+.insta{
+    width: 100px;
+}
+.whatsapp{
+    width: 180px;
+    margin-bottom: 2px;
+}
+.insta2{
+    visibility: none;
+    opacity: 0;
+    width: 5%;
+}
+.whatsapp2{
+    visibility: none;
+    opacity: 0;
+    width: 9%;
+    margin-bottom: 2px;
+}
+div.second a:hover{
+    background: none;
+}
+.carduri{
+    position: relative;
+    left: -50%;
+}
+.animatii{
+    
+    height: 700px;
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 100px;
+}
+.dollar{
+    border-radius: 40px;
+    width:300px;
+    background: #01b490;
+    height: 350px;
+    margin-left: 10%;
+    animation-timing-function: linear;
+}
+.dollar:hover > .thecard{
+    animation: dollar 2s infinite;
+}
+.thecard{
+    position: relative;
+    margin-top: 10%;
+    left: 30%;
+    width: 100px;
+    height: 100px;
+    transform-style:preserve-3d;
+    transition: all 0.5s linear;
+    background: none;
+}
+.Dollartext1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Pattaya', sans-serif;
+    
+}
+.Dollartext2{
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+
+}
+@keyframes dollar{
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-50px);
+    }
+    25%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-50px);
+    }
+    55%{
+        transform: translateY(0);
+    }
+    70%{
+        transform: rotateY(180deg);
+    }
+    85%{
+        transform: rotateY(0);
+    }
+}
+.dollarfront{
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    background: none;
+    color: black;
+}
+.dollarback{
+    position: absolute;
+    
+    width: 100%;
+    backface-visibility: hidden;
+    background: none;
+    color: black;
+    transform: rotateY(180deg);
+}
+.quality{
+    border-radius: 40px;
+    width: 300px;
+    background: #01b490;
+    height: 350px;
+    align-self: flex-end;
+    animation-timing-function: linear;
+}
+.quality:hover > .thecard2{
+    animation: quality 2s infinite;
+}
+.thecard2{
+    position: relative;
+    margin-top: 40px;
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    transform-style:preserve-3d;
+    transition: all 0.5s linear;
+    background: none;
+}
+.qualitytext1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Pattaya', sans-serif;
+    
+}
+.qualitytext2{
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.qualitytext3{
+    color: rgb(128, 2, 2);
+    font-size: 19px;
+    font-family: 'Pattaya', sans-serif;
+}
+@keyframes quality{
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: translateY(-50px);
+    }
+    25%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: scale(1.5);
+    }
+    60%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+
+ 
+}
+.qualityfront{
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    background: none;
+    color: black;
+}
+.qualityback{
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    background: none;
+    color: black;
+    transform: rotateY(180deg);
+}
+.masuratori{
+    border-radius: 40px;
+    width: 300px;
+    height: 350px;
+    background: #01b490;
+    animation-timing-function: linear;
+}
+.masuratori:hover > .thecard3{
+    animation: quality 1.5s infinite;
+    animation-name: masuratori;
+}
+.thecard3{
+    position: relative;;
+    margin-top: 40px;
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    transform-style:preserve-3d;
+    transition: all 0.5s linear;
+    background: none;
+}
+.masuratoritext1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Pattaya', sans-serif;
+    
+}
+.masuratoritext2{
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+
+}
+@keyframes masuratori{
+    20%{
+        transform: translateY(-50px);
+    }
+    40%{
+        transform: rotateZ(360deg) translateY(-50px);
+    }
+    75%{
+        transform: rotateZ(0);
+    }
+    
+}
+.masuratorifront{
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    background: none;
+    color: black;
+}
+.masuratoriback{
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    background: none;
+    color: black;
+}
+.montaj{
+    border-radius: 40px;
+    width: 300px;
+    height: 350px;
+    background: #01b490;
+    align-self: flex-end;
+    animation-timing-function: linear;
+}
+.montaj:hover > .thecard4 .thefront4 .montajfront{
+    animation: montaj 5s ease infinite;
+} 
+.montaj:hover > .thecard4 .thefront4 .montajfront2{
+    animation:montaj2 5s ease infinite;
+}
+.montaj:hover > .thecard4 .thefront4 .montajfront3{
+    animation: montaj3 5s ease infinite;
+}
+.thecard4{
+    position: relative;
+    left: 35%;
+    width: 100px;
+    height: 100px;
+    transform-style:preserve-3d;
+    transition: all 0.5s linear;
+    background: none;
+}
+.montajtext1{
+    
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Pattaya', sans-serif;
+    
+}
+.montajtext2{
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+
+}
+@keyframes montaj{
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: rotateZ(-60deg);
+    }
+
+    85%{
+        transform: rotateZ(-60deg);
+    }
+    90%{
+        transform: rotateZ(0);
+    }
+
+}
+@keyframes montaj2{
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: rotateZ(-60deg);
+    }
+    30%{
+        transform: translateX(30px) rotateZ(-60deg);
+    }
+    75%{
+        transform: translateX(30px) rotateZ(-60deg);
+    }
+    80%{
+        transform: translateX(0) rotateZ(-60deg);
+    }
+    85%{
+        transform: translateX(0) rotateZ(-60deg);
+    }
+    90%{
+        transform: rotateZ(0);
+    }
+
+}
+@keyframes montaj3{
+    0%{
+        transform: translateY(0);
+    }
+    10%{
+        transform: rotateZ(-60deg);
+    }
+    30%{
+        transform: translateX(30px) rotateZ(-60deg);
+    }
+    50%{
+        transform: translateX(60px) rotateZ(-60deg);
+    }
+    70%{
+        transform: translateX(60px) rotateZ(-60deg);
+    }
+
+    75%{
+        transform: translateX(30px) rotateZ(-60deg);
+    }
+    80%{
+        transform: translateX(0) rotateZ(-60deg);
+    }
+    85%{
+        transform: translateX(0) rotateZ(-60deg);
+    }
+    90%{
+        transform: rotateZ(0);
+    }
+
+}
+.montajfront, img.montajfront2, img.montajfront3{
+    position: absolute;
+    width: 100%;
+    background: none;
+    backface-visibility: hidden;
+    color: black;
+}
+.consultanta{
+    border-radius: 40px;
+    width: 300px;
+    height: 350px;
+    margin-right: 10%;
+    background: #01b490;
+    animation-timing-function: linear;
+}
+.consultanta:hover > .thecard5 .consultantafront{
+    animation: consultanta 3s ease infinite;
+}
+/*.consultanta:hover > .thecard5 .white1{
+    animation: consultanta2 3s ease infinite;
+}*/
+.thecard5{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 35%;
+    width: 100px;
+    z-index: 2;
+    display: flex;
+    height: 100px;
+    transform-style:preserve-3d;
+    transition: all 0.5s linear;
+    background: none;
+}
+.consultantatext1{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Pattaya', sans-serif;
+    
+}
+.consultantatext2{
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+
+}
+@keyframes consultanta{
+    0%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(100%);
+        opacity: 0;
+
+    }
+    30.1%{
+        opacity: 0;
+        transform: translateX(-80%);
+        
+    }
+    60%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    70%{
+        transform: translateY(-50%);
+    }
+    80%{
+        transform: translateY(0);
+    }
+    90%{
+        transform: translateY(-50%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes consultanta2{
+    0%{
+        transform: translateX(90%);
+    }
+    30%{
+        transform: translateX(90%);
+
+    }
+    30.1%{
+
+        transform: translateX(-80%);    
+    }
+    100%{
+        transform: translateX(-80%);
+    }
+
+}
+.thefront5 {
+    position: absolute;
+    width: 100%;
+    background: none;
+    color: black;
+}
+.consultantafront{
+    position: absolute;
+    width: 98%;
+    background: none;
+    color: black;
+}
+.consultantaback{
+    position: absolute;
+    width: 98%;
+    backface-visibility: hidden;
+    background: none;
+    color: black;
+    transform: rotateY(180deg);
+}
+/*.white1{
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: white;
+    background: #01b490;
+    transform: translateX(-80%);
+}*/
+.hand{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    border: 6px solid black;
+    margin-bottom: 100px;
+   
+}
+.handshake{
+    display: block;
+    width: 100%;
+    opacity: 75%;
+    height: 100%;
+}
+.handtext1{
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    z-index: 3;
+    font-size: 100px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Pattaya', sans-serif;
+}
+.handtext2{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    margin-left:15%;
+    text-align: center;
+    opacity: 1;
+    z-index: 3;
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Pattaya', sans-serif;
+}
+.serviciitext1{
+    position: relative;
+    margin-left: 10%;
+    margin-top: 100px;
+    font-size: 30px;
+    width: 80%;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+}
+.serviciitext2{
+
+    width: 50%;
+    margin-top: 100px;
+    margin-left: 50%;
+    align-content: center;
+    text-align: center;
+}
+@media (max-width: 1600px){
+    .dollar{
+        margin:0;
+    }
+    .consultanta{
+        margin:0;
+    }
+    .animatii{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-items: center;
+        justify-content: center;
+        margin-bottom: 500px;
+    }
+    .dollar{
+        flex: 0 300px 10%;
+        margin-right: 300px;
+    }
+    .quality{
+        flex: 0 300px 10%;
+    }
+    .masuratori{
+        flex: 0 300px 90%;
+        margin-left: 500px;
+        margin-right: 500px;
+        
+    }
+    .montaj{
+        flex: 0 300px 20%;
+        margin-right: 300px;
+    }
+    .consultanta{
+        flex: 0 300px 20%;
+    }
+    
+}
+@media (max-width: 1320px){
+    .masuratori{
+        margin-left: 300px;
+        margin-right: 300px;
+        
+    }
+    .handtext2{
+        font-size: 35px;
+    }
+}
+@media (max-width: 1200px){
+    .hand{
+        height: 400px;
+    }
+    .handshake{
+        height: 390px;
+    }
+}
+@media (max-width: 1100px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+    
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1020px){
+    .dollar{
+        margin-right: 10%;
+        margin-bottom: 20px;
+    }
+    .quality{
+        margin-bottom: 20px;
+    }
+    .masuratori{
+        margin-bottom: 20px;
+    }
+    .montaj{
+        margin-right: 10%;
+    }
+}
+@media (max-width: 917px){
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        color: white;
+        border-radius: 15px;
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+    #check:checked ~ nav ul{
+        left: 0%;
+    }
+    #check:checked ~ .serviciitext1{
+        position: unset;
+    }
+    #check:checked ~ .animatii, #check:checked ~ .hand, #check:checked ~ .second{
+        display: none;
+    }
+    #check:checked ~ nav{
+        position: fixed;
+        margin-top: -100px;
+    }
+    .dollar{
+        width: 250px;
+        height: 320px;
+    }
+    .quality{
+        width: 250px;
+        height: 320px;
+    }
+    .masuratori{
+        width: 250px;
+        height: 320px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    .montaj{
+        width: 250px;
+        height: 320px;
+    }
+    .consultanta{
+        width: 250px;
+        height: 320px;
+    }
+    .white1{
+        width: 85%;
+        height: 100%;
+    }
+    @keyframes consultanta {
+        
+        0%{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        30%{
+            transform: translateX(90%); 
+            opacity: 0;
+        }
+        30.1%{
+    
+            transform: translateX(-80%);
+            opacity: 0;
+            
+        }
+        60%{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        70%{
+            transform: translateY(-50%);
+        }
+        80%{
+            transform: translateY(0);
+        }
+        90%{
+            transform: translateY(-50%);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    .handtext1{
+        font-size: 70px;
+    }
+    .handtext2{
+        font-size:25px;
+    }
+}
+@media (max-width: 880px){
+    .serviciitext2{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .serviciitext1{
+        left: 0%;
+    }
+    .insta2{
+        display: none;
+    }
+    .whatsapp2{
+        display: none;
+    }
+    .facebook{
+        position: relative;
+        left: 15%;
+        
+    }
+    .insta{
+        position: relative;
+        left: 15%;
+    }
+    .whatsapp{
+        position: relative;
+        left: 15%;
+        margin-bottom: 2px;
+    }
+
+}
+@media (max-width: 750px){
+    .hand{
+        height: 300px;
+    }
+    .handshake{
+        height: 290px;
+    }
+    .facebook{
+        left: 10%;
+    }
+    .insta{
+        left: 10%;
+    }
+    .whatsapp{
+        left: 10%;
+    }
+}
+@media (max-width: 680px){
+    .facebook{
+        left: 15%;
+        width: 160px;
+        
+    }
+    .insta{
+        left: 15%;
+        width: 80px;
+    }
+    .whatsapp{
+        left: 15%;
+        width: 145px;
+    }
+    .animatii{
+        position: relative;
+        left: 50%;
+        width: 50%;
+        margin-top: 500px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .dollar{
+        margin: 0 0 0 0;
+        position: relative;
+        left: -50%;
+        
+        margin-bottom: 20px;
+        flex:none;
+        align-self: unset;
+        animation-timing-function: linear;
+    }
+    .masuratori{
+        position: relative;
+        left: -50%;
+        margin: 0 0 0 0;
+        margin-bottom: 20px;
+        flex:none;
+        align-self: unset;
+    }
+    .quality{
+        position: relative;
+        left: -50%;
+        margin: 0 0 0 0;
+        margin-bottom: 20px;
+        flex:none;
+        align-self: unset;
+    }
+    .montaj{
+        position: relative;
+        left: -50%;
+        margin: 0 0 0 0;
+        margin-bottom: 20px;
+        margin-left: 0;
+        flex:none;
+        align-self: unset;
+    }
+    .consultanta{
+        position: relative;
+        left: -50%;
+        margin: 0 0 0 0;
+        flex:none;
+        margin-bottom: 20px;
+        align-self: unset;
+    }
+    .handtext2{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+@media (max-width: 563px){
+    .handtext1{
+        font-size: 50px;
+    }
+    .handtext2{
+        margin-top: -40px;
+    }
+    .facebook{
+        left: 10%;
+        
+    }
+    .insta{
+        left: 10%;
+    }
+    .whatsapp{
+        left: 10%;
+    }
+}
+@media (max-width: 500px){
+    .facebook{
+        left: 5%;
+        
+    }
+    .insta{
+        left: 5%;
+    }
+    .whatsapp{
+        left: 5%;
+    }
+}
+@media (max-width: 450px){
+    .facebook{
+        left: 15%;
+        width: 100px;
+        
+    }
+    .insta{
+        left: 15%;
+        width: 50px;
+    }
+    .whatsapp{
+        left: 15%;
+        width: 90px;
+    }
+    .handtext2{
+        font-size: 20px;
+    }
+    .animatii{
+        margin-left: 0;
+        left: 50%;
+        width: 25%;
+    }
+    .dollar{
+        left: -100%;
+    }
+    .quality{
+        left: -100%;
+    }
+    .masuratori{
+        left: -100%;
+    }
+    .montaj{
+        left: -100%;
+    }
+    .consultanta{
+        left: -100%;
+    }
+    .serviciitext2{
+        margin-top: 20px;
+    }
+    .serviciitext1{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    #check:checked ~ nav{
+        position: fixed;
+        margin-top: -50px;
+    }
+}
+
+@media (max-width: 400px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 30px;
+    }
+    ul{
+        
+        height: 100%;
+
+    }
+    .dollar{
+        margin-left: -50%;
+    }
+    .quality{
+        margin-left: -50%;
+    }
+    .masuratori{
+        margin-left: -50%;
+    }
+    .montaj{
+        margin-left: -50%;
+    }
+    .consultanta{
+        margin-left: -50%;
+    }
+    .handtext1{
+        font-size: 30px;
+    }
+    .hand{
+        height: 250px;
+    }
+    .handshake{
+        height: 240px;
+    }
+}
+@media (max-width: 350px){
+    .facebook{
+        left: 7%;
+        
+    }
+    .insta{
+        left: 7%;
+
+    }
+    .hand{
+        height: 200px;
+        margin-bottom: 200px;
+    }
+    .handshake{
+        height: 190px;
+    }
+    .whatsapp{
+        left: 7%;
+
+    }
+    .handtext1{
+        align-self: center;
+        font-size: 50px;
+        margin-bottom: 200px;
+    }
+    .handtext2{
+        padding-top: 150px;
+        
+    }
+    .second{
+        margin-top: 100px;
+    }
+}
+@media (max-width: 326px){
+    .dollar{
+        left: -200%;
+        margin: 30px 0 30px 20px;
+
+    }
+    .quality{
+        left: -200%;
+        margin: 0 0 30px 20px;
+    }
+    .masuratori{
+        left: -200%;
+        margin: 0 0 30px 20px;
+    }
+    .montaj{
+        left: -200%;
+        margin: 0 0 30px 20px;
+    }
+    .consultanta{
+        left: -200%;
+        margin: 0 0 30px 20px;
+    }
+    .animatii{
+        margin-top: 600px;
+    }
+    .hand{
+        margin-top: 600px;
+    }
+    
+}
+@media (max-width: 300px){
+    .checkbtn{
+        padding-right: 10px;
+    }
+}

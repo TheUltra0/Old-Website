@@ -1,0 +1,185 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+ body{
+    font-family: montserrat;
+    
+}
+
+nav{
+    height: 85px;
+    background: #00e6b8;
+    width:100%;
+
+}
+label.logo{
+    color:white;
+    font-size:40px;
+    padding: 0  0 0 100px;
+    line-height: 80px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    border-radius: 15px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+a.active,a:hover{
+    background: #00997a;
+    transition: .5s;
+}
+.checkbtn{
+    color: white;
+    font-size: 45px;
+    float: right;
+    line-height: 80px;
+    padding-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+
+
+#check{
+    display: none;
+}
+@media (max-width: 1100px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 40px;
+    }
+    
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 915px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        color: white;
+        border-radius: 15px;
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+    }
+}
+@media (max-width: 400px){
+    label.logo{
+        font-size: 20px;
+        padding-left: 30px;
+    }
+    ul{
+        
+        height: 100%;
+
+    }
+}
+@media (max-width: 300px){
+    .checkbtn{
+        padding-right: 10px;
+    }
+}
+div.first, div.second{
+    width: 100%;
+    margin-top: 40px;
+    
+}
+div.first{
+    background: rgb(216, 216, 216);
+}
+div.second{
+    background: #2c3e50;
+}
+.poza13{
+    width: 15%;
+    margin: 15px 0 15px 25%;
+}
+.poza15{
+    width: 15%;
+    margin: 15px 0 15px 0;
+}
+.poza17{
+    width: 15%;
+    margin: 15px 0 15px 0;
+}
+.facebook{
+    width: 10%;
+}
+.insta{
+    width: 5%;
+}
+div.second a:hover{
+    background: none;
+}
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slider {
+    background: rgb(97, 105, 109);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+  }
+  
+  .intro-text {
+    color: rgb(233, 233, 233);
+    font-family: "Heebo", sans-serif;
+    font-size: 3rem;
+  }
+  
+  .hide {
+    background: black;
+    overflow: hidden;
+  }
+  
+  .hide span {
+    transform: translateY(100%);
+    display: inline-block;
+  }
+
+
+
